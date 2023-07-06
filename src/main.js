@@ -42,7 +42,7 @@ function fetchCampsData(){
 
             const cap = document.createElement('p')
             cap.className = 'camp-cap'
-            cap.innerText = `: ${campData.people} People`
+            cap.innerText = `Capacity: ${campData.people} People`
             campList.appendChild(cap)
         })
      })
