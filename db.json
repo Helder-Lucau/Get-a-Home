@@ -7,8 +7,7 @@
       "description":"To keep on investing to fight against the extreme poverty and hunger, to promote human rights and promote peace and emergency response in the world. The charity is supporting and training the talented youths in the poor communities, empowering Orphans, Widows and Single mothers, supporting the care of Orphans, persons suffering from HIV/AIDS and disaster victims",
       "location":"Kenya",
       "email": "",
-      "people": 50,
-      "donation": 100
+      "people": 50
     },
     {
       "id": 2,
@@ -61,9 +60,9 @@
     {
       "id": 1,
       "donorName": "Marion",
-      "payment-method": "Paypal",
+      "paymentCard": "Paypal",
       "donation": 50,
-      "email": ""
+      "email": "marion@gmail.com"
     }
   ]
 }

@@ -26,6 +26,10 @@ const searchInput = document.querySelector('form')
 //         })           
 //     })
 // }
+
+document.querySelector('.donate-btn').addEventListener('click', function(){
+    document.querySelector('.bg-modal').style.display = 'flex'
+})
  
         //data validation 
 function fetchCampsData(){

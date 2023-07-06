@@ -117,24 +117,60 @@ header .donate-btn:hover{
     align-items: center;
     justify-content: center;
 }
-form {
+.section-main form {
     margin-top: 30px;
     display: flex;
 
 }
-form input {
+.section-main form input {
     flex: 1;
     border: none;
     outline: none;
     padding: 20px 100px;
 }
-form button {
+.section-main form button {
     background: orange;
     padding: 20px 50px;
     border: none;
     outline: none;
     letter-spacing: 1px;
     cursor: pointer;
+}
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.modal-content {
+    width: 500px;
+    height: 600px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 100px;
+    position: relative;
+}
+header form input {
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding-top: 10px;
+}
+header .modal-content .close {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 45px;
+    transform: rotate(45deg);
+    cursor: pointer;
+
 }
 footer {
     background-color: orange;
