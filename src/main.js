@@ -1,7 +1,6 @@
 const apiURL = 'https://main-json.onrender.com'
 const campList = document.querySelector(".camp-content")
 const campDetails = document.querySelector(".camp-details")
-
 const searchInput = document.querySelector('form')
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -9,15 +8,25 @@ document.addEventListener("DOMContentLoaded", () => {
     searchInput.addEventListener('submit',(e) => {
         e.preventDefault()
 
-        // const searchResult = e.target.location.value       
+        const searchResult = document.getElementById("search")
+
         fetch(`${apiURL}/camps`)
         .then(res => res.json())
-        .then(data => {
-            console.log(data[key].location)
-        //data validation 
-        }) 
+        .then((data) => {
+
+            const dataSearch = data.forEach(function (item) {
+                if (dataSearch === searchResult) {
+                    console.log(item.location)
+                }else{
+                    console.log("data does not exist");
+                }    
+            })           
+        })
     })
+        //data validation 
 })
+
+
 
 function fetchCampsData(){
     fetch(`${apiURL}/camps`)
