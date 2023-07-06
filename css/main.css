@@ -32,20 +32,17 @@ a {
 a:hover{
     color: #135cfd;
 }
-.donate-btn{
+header .donate-btn {
     margin-right: 200px;
-}
-.donate-btn {
     color: black;
     font-size: 25px;
     padding: 15px 30px;
     background-color: orange;
-    border: none;
     border-radius: 10px;
     font-weight: bold;
     cursor: pointer;   
 }
-.donate-btn:hover{
+header .donate-btn:hover{
     background-color: #3deeb7;
 }
 .section-main {
@@ -58,12 +55,35 @@ a:hover{
 }
 .main-intro {
     padding-top: 10%;
-    color: black;
+    color:black;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 .main-intro h1 {
     font-size: 40px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.main-intro .donate-btn {
+    margin-top: 20px;
+    background: transparent;
+    padding: 10px 50px;
+    font-size: 30px;
+    border: 3px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+}
+.main-intro p {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 600;
     letter-spacing: 5px;
+    color: orange;
+}
+.search-form {
+    margin-top: 40px;
 }
 .section-two {
     height: auto;

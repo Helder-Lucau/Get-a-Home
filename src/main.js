@@ -2,14 +2,29 @@ const apiURL = 'https://main-json.onrender.com'
 const campList = document.querySelector(".camp-content")
 const campDetails = document.querySelector(".camp-details")
 
-function searchCamps(){
-    document.querySelector('form').addEventListener('submit',(e) => {
+const searchInput = document.querySelector('#location')
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+    searchInput.addEventListener('submit',(e) => {
         e.preventDefault()
+
+        const searchResult = e.target.location.value
         
-        //data validation
-        
+        fetch(`https://main-json.onrender.com/camps/${searchResult}`, {
+            method: 'GET',
+            headers:{
+                "Content-Type": 'application/json',
+            },
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+        })
+        //data validation  
     })
-} 
+})
 
 function fetchCampsData(){
     fetch(`${apiURL}/camps`)
