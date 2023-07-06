@@ -2,27 +2,20 @@ const apiURL = 'https://main-json.onrender.com'
 const campList = document.querySelector(".camp-content")
 const campDetails = document.querySelector(".camp-details")
 
-const searchInput = document.querySelector('#location')
+const searchInput = document.querySelector('form')
 
 document.addEventListener("DOMContentLoaded", () => {
-
 
     searchInput.addEventListener('submit',(e) => {
         e.preventDefault()
 
-        const searchResult = e.target.location.value
-        
-        fetch(`https://main-json.onrender.com/camps/${searchResult}`, {
-            method: 'GET',
-            headers:{
-                "Content-Type": 'application/json',
-            },
-        })
+        // const searchResult = e.target.location.value       
+        fetch(`${apiURL}/camps`)
         .then(res => res.json())
         .then(data => {
-            console.log(data)
-        })
-        //data validation  
+            console.log(data[key].location)
+        //data validation 
+        }) 
     })
 })
 
