@@ -3,31 +3,30 @@ const campList = document.querySelector(".camp-content")
 const campDetails = document.querySelector(".camp-details")
 const searchInput = document.querySelector('form')
 
-document.addEventListener("DOMContentLoaded", () => {
-
+function searchDataResults(){
     searchInput.addEventListener('submit',(e) => {
         e.preventDefault()
 
-        const searchResult = document.getElementById("search")
+        const searchResult = document.querySelector("#search")
 
         fetch(`${apiURL}/camps`)
         .then(res => res.json())
         .then((data) => {
 
-            const dataSearch = data.forEach(function (item) {
-                if (dataSearch === searchResult) {
-                    console.log(item.location)
+            const dataSearched = data.map(function(item){
+                console.log(item.location)
+            })
+
+                if (searchResult == dataSearched) {
+                    console.log('data exists')
                 }else{
                     console.log("data does not exist");
-                }    
-            })           
-        })
+            }    
+        })           
     })
+}
+ 
         //data validation 
-})
-
-
-
 function fetchCampsData(){
     fetch(`${apiURL}/camps`)
     .then((res) => res.json())
@@ -102,5 +101,6 @@ function campsDataDetails(campData){
 function initialize(){
 
     fetchCampsData()
+    searchDataResults()
 }
 initialize()
