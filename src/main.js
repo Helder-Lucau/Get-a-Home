@@ -15,7 +15,7 @@ function fetchCampsData(){
     fetch(`${apiURL}/camps`)
     .then((res) => res.json())
     .then((data) => {
-        data.forEach(campData => {
+        data.forEach((campData)  => {
 
            const camp = document.createElement('div')
            camp.className = 'camp-list'
