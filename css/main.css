@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,300&family=Arsenal&family=IBM+Plex+Sans+Condensed:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=PT+Sans:wght@700&family=Playfair+Display&family=Rajdhani:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +32,7 @@ a {
     padding-right: 50px;
 }
 a:hover{
-    color: #135cfd;
+    color: orangered;
 }
 header .donate-btn {
     margin-right: 200px;
@@ -43,7 +45,7 @@ header .donate-btn {
     cursor: pointer;   
 }
 header .donate-btn:hover{
-    background-color: #3deeb7;
+    background-color: orangered;
 }
 .section-main {
     height: 800px;
@@ -56,31 +58,35 @@ header .donate-btn:hover{
 .main-intro {
     padding-top: 10%;
     color:black;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-family: 'Ysabeau SC', sans-serif;
 }
 .main-intro h1 {
     font-size: 40px;
-    letter-spacing: 10px;
+    letter-spacing: 5cap;
     text-transform: uppercase;
     font-weight: 600;
 }
 .main-intro .donate-btn {
-    margin-top: 20px;
-    background: transparent;
-    padding: 10px 50px;
+    margin-top: 50px;
+    padding: 30px 50px;
     font-size: 30px;
-    border: 3px solid white;
-    border-radius: 50px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 5px;
     cursor: pointer;
-    color: white;
-    font-weight: bolder;
+    background-color: orange;
+    font-weight: 600;
+}
+.main-intro .donate-btn:hover {
+    background-color: orangered;
 }
 .main-intro p {
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 5px;
-    color: orange;
+    color: white;
+    text-transform:lowercase;
+    
 }
 .search-form {
     margin-top: 40px;
@@ -105,6 +111,30 @@ header .donate-btn:hover{
     margin-top: 30px;
     width: 600px;
     height: 600px;
+}
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    margin-top: 30px;
+    display: flex;
+
+}
+form input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 20px 100px;
+}
+form button {
+    background: orange;
+    padding: 20px 50px;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    cursor: pointer;
 }
 footer {
     background-color: orange;
