@@ -11,6 +11,9 @@ const campList = document.querySelector("#camp-profile")
     })
 // })
 
+let popup = document.getElementById('popup')
+
+
 function fetchCampsData(){
     fetch(`${apiURL}/camps`)
     .then((res) => res.json())
@@ -25,7 +28,7 @@ function fetchCampsData(){
             const campName = document.createElement('h3')
             campName.className = 'camp-name'
             campName.innerText = campData.campname
-            campList.appendChild(campName)
+            campList.append(campName)
 
             const campDesc = document.createElement('p')
             campDesc.className = 'camp-desc'
@@ -50,7 +53,7 @@ function fetchCampsData(){
             const donateBtn = document.createElement('button')
             donateBtn.className = 'donote-btn'
             donateBtn.innerText = 'donate'
-            campList.appendChild(donateBtn)
+            campList.append(donateBtn)
 
 
         })

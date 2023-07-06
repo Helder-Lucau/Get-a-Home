@@ -2,4 +2,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    align-items: center;
+    padding: 30px 5%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-family: 'Playfair Display', serif;
+}
+.logo {
+    width: 200px;
+}
+nav {
+    margin-left: 25%;
+}
+nav ul li {
+    display: inline-flex;  
+}
+a {
+    color: black;
+    font-size: 25px;
+    padding-right: 50px;
+}
+a:hover{
+    color: #135cfd;
+}
+.donate-btn{
+    margin-right: 200px;
+}
+.donate-btn {
+    color: black;
+    font-size: 25px;
+    padding: 15px 30px;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;   
+}
+.donate-btn:hover{
+    background-color: #3deeb7;
 }
