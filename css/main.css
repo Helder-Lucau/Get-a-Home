@@ -2,9 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
+}
+body {
+    width: auto;
+    height: auto;
 }
 header {
     display: flex;
@@ -47,7 +50,7 @@ a:hover{
 .donate-btn:hover{
     background-color: #3deeb7;
 }
-main {
+.section-main {
     height: 700px;
     background-image: url('../images/shelter1.jpg');
     background-size: cover;
@@ -55,8 +58,8 @@ main {
     background-repeat: no-repeat;
     text-align: center;
 }
-section {
-    height: 650;
+.section-two {
+    height: auto;
     width: auto;
     text-align: center;
 }
@@ -67,9 +70,8 @@ section {
     margin-top: 50px;
 }
 .camp-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220, auto));
-    justify-content: space-around;
+    display: inline-block;
+    margin-right: 40px;
     align-items: center;
 }
 .camp-list img {
@@ -81,4 +83,5 @@ footer {
     background-color: orange;
     width: auto;
     height: 500px;
+    margin-top: 50px;
 }
