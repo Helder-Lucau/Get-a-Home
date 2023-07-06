@@ -1,4 +1,4 @@
-const apiURL = 'http://localhost:3000'
+const apiURL = 'https://main-json.onrender.com'
 const campList = document.querySelector(".camp-content")
 const campDetails = document.querySelector(".camp-details")
 
