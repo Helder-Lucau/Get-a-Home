@@ -18,8 +18,8 @@ The website can:
 * JSON
 
 ## Setup Requirements
--Web-browser of your choice
 
+* Web-browser of your choice (Chrome, Firefox)
 
 ## Author
 * This project code files is authored by [Helder Lucau](https://github.com/Helder-Lucau).
