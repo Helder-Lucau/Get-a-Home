@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,300&family=Arsenal&family=IBM+Plex+Sans+Condensed:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=PT+Sans:wght@700&family=Playfair+Display&family=Rajdhani:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Economica&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -40,7 +41,7 @@ header .donate-btn {
     font-size: 25px;
     padding: 15px 30px;
     background-color: orange;
-    border-radius: 10px;
+    border-radius: 15px;
     font-weight: bold;
     cursor: pointer;   
 }
@@ -57,39 +58,29 @@ header .donate-btn:hover{
 }
 .main-intro {
     padding-top: 10%;
-    color:black;
-    font-family: 'Ysabeau SC', sans-serif;
 }
 .main-intro h1 {
-    font-size: 40px;
-    letter-spacing: 5cap;
+    font-size: 60px;
+    letter-spacing: 5px;
     text-transform: uppercase;
     font-weight: 600;
+    font-family: 'Amatic SC', cursive;
 }
-.main-intro .donate-btn {
-    margin-top: 50px;
-    padding: 30px 50px;
-    font-size: 30px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: orange;
-    font-weight: 600;
+.main-intro h1 span {
+    color: orange;
 }
-.main-intro .donate-btn:hover {
-    background-color: orangered;
-}
+
 .main-intro p {
     margin-top: 20px;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: bolder;
     letter-spacing: 5px;
-    color: white;
-    text-transform:lowercase;
-    
+    color:white;
+    font-family: 'Amatic SC', cursive; 
 }
-.search-form {
-    margin-top: 40px;
+.main-intro p span {
+    color: orange;
+    text-transform: uppercase;
 }
 .section-two {
     height: auto;
@@ -118,12 +109,11 @@ header .donate-btn:hover{
     justify-content: center;
 }
 .section-main form {
-    margin-top: 30px;
+    margin-top: 100px;
     display: flex;
 
 }
 .section-main form input {
-    flex: 1;
     border: none;
     outline: none;
     padding: 20px 100px;
@@ -147,7 +137,6 @@ header .donate-btn:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
 }
 .modal-content {
     width: 800px;

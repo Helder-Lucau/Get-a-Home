@@ -3,38 +3,15 @@ const campList = document.querySelector(".camp-content")
 const campDetails = document.querySelector(".camp-details")
 const searchInput = document.querySelector('form')
 
-// function searchDataResults(){
-//     searchInput.addEventListener('submit',(e) => {
-//         e.preventDefault()
-
-//         const searchResult = document.querySelector("#search")
-
-//         fetch(`${apiURL}/camps`)
-//         .then(res => res.json())
-//         .then((data) => {
-
-//             const dataSearched = Object.values(data)
-//                 console.log(dataSearched)
-//             for(key in data){
-//                 if(data.)
-//             }
-//                 if (searchResult == dataSearched) {
-//                     console.log('data exists')
-//                 }else{
-//                     console.log("data does not exist");
-//             }    
-//         })           
-//     })
-// }
-
+//Modal box pop up
+//Displays a input form to enter donation details
 document.querySelector('.donate-btn').addEventListener('click', function(){
     document.querySelector('.bg-modal').style.display = 'flex'
 })
 document.querySelector('.close').addEventListener('click', function(){
     document.querySelector('.bg-modal').style.display = 'none'
 })
- 
-        //data validation 
+  
 function fetchCampsData(){
     fetch(`${apiURL}/camps`)
     .then((res) => res.json())
@@ -48,9 +25,15 @@ function fetchCampsData(){
                 <h3>${campData.campname}</h3>
                 <p>Country: ${campData.location}</p>
            `
+           const readMore = document.createElement('button')
+           readMore.className = 'read-more'
+           readMore.innerText = 'READ MORE'
+
+           camp.appendChild(readMore)
            campList.appendChild(camp)
 
-           camp.addEventListener('click', () => {
+           readMore.addEventListener('click', (e) => {
+                e.preventDefault()
                 campsDataDetails(campData)
            })
         })
@@ -108,7 +91,6 @@ function campsDataDetails(campData){
 
 document.querySelector("#modal-form").addEventListener('submit', handleDonorSubmit)
 
-
 function handleDonorSubmit(e){
     e.preventDefault()
     let donorObj = {
@@ -120,6 +102,7 @@ function handleDonorSubmit(e){
     addDonor(donorObj)
 }
 
+//function that POST data on the db
 function addDonor(donorObj){
         
         fetch(`${apiURL}/donor`,{
