@@ -174,17 +174,40 @@ form .dnt-btn {
 form .dnt-btn:hover {
     background-color: orangered;
 }
-footer {
+
+#newsletter-form {
     background-color: orange;
     width: auto;
-    height: 600px;
-    margin-top: 50px;
+    height: 400px;
+    justify-content: center;
     text-align: center;
+    display: grid;
 }
-footer h2 {
+
+#newsletter-form h2 {
+    margin-top: 100px;
     font-size: 40px;
     text-transform: uppercase;
-    margin: 0;
     font-weight: 700;
     letter-spacing: 10px;
+}
+#newsletter-form p {
+    font-size: 25px;
+}
+#newsletter-form input {
+    font-size: 20px;
+    width: 80%;
+    border: none;
+    padding: 15px 20px;
+    margin-right: 10px;
+    outline: none;
+}
+#newsletter-form button {
+    background: white;
+    padding: 10px 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 20px;
 }

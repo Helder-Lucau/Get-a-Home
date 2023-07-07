@@ -1,13 +1,16 @@
 const apiURL = 'https://main-json.onrender.com'
 const campList = document.querySelector(".camp-content")
 const campDetails = document.querySelector(".camp-details")
-const searchInput = document.querySelector('form')
+const searchInput = document.getElementById('search-form')
+const searchResult = document.getElementById('search-result')
+const searchBtn = document.querySelector('#search')
 
 //Modal box pop up
 //Displays a input form to enter donation details
 document.querySelector('.donate-btn').addEventListener('click', function(){
     document.querySelector('.bg-modal').style.display = 'flex'
 })
+
 document.querySelector('.close').addEventListener('click', function(){
     document.querySelector('.bg-modal').style.display = 'none'
 })
@@ -83,7 +86,7 @@ function campsDataDetails(campData){
     campProfile.appendChild(cap); 
 }
 
-//submitting the values the user entered to the db
+//Submitting the values the user entered to the db
 document.querySelector("#modal-form").addEventListener('submit', handleDonorSubmit)
 
 function handleDonorSubmit(e){
@@ -113,6 +116,22 @@ function addDonor(donorObj){
     })
     .catch(error => {
         console.log('Error:', error);
+    })
+}
+
+//Search function to loop through the array and fetch location data
+function searchButton() {
+
+    fetch(`${apiURL}/camps`)
+    .then(res => res.json())
+    .then(data => {
+
+        const fetchLocation = data["location"]
+
+        searchBtn.addEventListener("submit", (e) => {
+            e.preventDefault()
+            data.forEach(console.log(fetchLocation))
+        })
     })
 }
 
