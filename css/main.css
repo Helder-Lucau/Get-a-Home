@@ -177,6 +177,14 @@ form .dnt-btn:hover {
 footer {
     background-color: orange;
     width: auto;
-    height: 500px;
+    height: 600px;
     margin-top: 50px;
+    text-align: center;
+}
+footer h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 10px;
 }
