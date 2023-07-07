@@ -80,15 +80,10 @@ function campsDataDetails(campData){
     const cap = document.createElement("p");
     cap.className = "camp-cap";
     cap.innerText = `Capacity: ${campData.people} People`;
-    campProfile.appendChild(cap);
-
-    const volunteerBtn = document.createElement("button");
-    volunteerBtn.className = "volunteer-btn";
-    volunteerBtn.innerText = "Volunteer";
-    campProfile.append(volunteerBtn);
-   
+    campProfile.appendChild(cap); 
 }
 
+//submitting the values the user entered to the db
 document.querySelector("#modal-form").addEventListener('submit', handleDonorSubmit)
 
 function handleDonorSubmit(e){
@@ -113,12 +108,16 @@ function addDonor(donorObj){
             body: JSON.stringify(donorObj)
         })
     .then(res => res.json())
-    .then(donorData => console.log(donorData))
+    .then(donorData => {
+        console.log(donorData)
+    })
+    .catch(error => {
+        console.log('Error:', error);
+    })
 }
 
 function initialize(){
 
     fetchCampsData()
-    // searchDataResults()
 }
 initialize()
