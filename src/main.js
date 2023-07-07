@@ -75,11 +75,6 @@ function campsDataDetails(campData){
     country.innerText = `Country: ${campData.location}`;
     campProfile.appendChild(country);
 
-    const mail = document.createElement("p");
-    mail.className = "camp-mail";
-    mail.innerText = `Email Address: ${campData.email}`;
-    campProfile.appendChild(mail);
-
     const cap = document.createElement("p");
     cap.className = "camp-cap";
     cap.innerText = `Capacity: ${campData.people} People`;
@@ -126,12 +121,44 @@ function searchButton() {
     .then(res => res.json())
     .then(data => {
 
-        const fetchLocation = data["location"]
+        const fetchLocation = data.location
+        console.log(fetchLocation)
 
-        searchBtn.addEventListener("submit", (e) => {
-            e.preventDefault()
-            data.forEach(console.log(fetchLocation))
+    //     searchBtn.addEventListener("submit", (e) => {
+    //         e.preventDefault()
+    //         data.forEach(console.log(fetchLocation))
+    //     })
+    })
+}
+
+//
+document.querySelector("#newsletter-form").addEventListener('submit', handleNewsletterSubmit)
+
+function handleNewsletterSubmit(e){
+    e.preventDefault()
+    let newsletterObj = {
+        subscribeEmail:e.target.newsletter.value
+    }
+    addNewsletter(newsletterObj)
+}
+
+//function that POST subscribe to newsletter email data on the db
+function addNewsletter(newsletterObj){
+        
+        fetch(`${apiURL}/newsletter`,{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(newsletterObj)
         })
+    .then(res => res.json())
+    .then(subscribeData => {
+        console.log(subscribeData)
+        alert("Thank you for subscribing")
+    })
+    .catch(error => {
+        console.log('Error:', error);
     })
 }
 

@@ -89,9 +89,9 @@ header .donate-btn:hover{
 }
 .main-content h2 {
     font-size: 40px;
-    font-weight: 600;
     text-align: center;
     margin-top: 50px;
+    font-family: 'Amatic SC', cursive; 
 }
 .camp-list {
     display: inline-block;
