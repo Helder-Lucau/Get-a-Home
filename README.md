@@ -5,9 +5,9 @@
 `Get a Home` is a website that provides a way to donate money to help refugee camps and shelter homes provide basic needs to the less fortunate.
 
 The website can:
-*List camps and shelter homes
-*Donate button 
-*Subscribe to newsletter
+* List camps and shelter homes
+* Donate button 
+* Subscribe to newsletter
 
 ## Implementation
 
@@ -26,7 +26,7 @@ The website can:
 <img src="./images/landingpage.png" alt="landingpage">
 
 ### Donation 
-<img src="./images/paymentinfo.png" alt="landingpage">
+<img src="./images/paymentinfo.png" alt="donation">
 
 ## Author
 * This project code files is authored by [Helder Lucau](https://github.com/Helder-Lucau).
