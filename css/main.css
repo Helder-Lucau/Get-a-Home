@@ -26,12 +26,13 @@ nav {
     margin-left: 20%;
 }
 nav ul li {
-    display: inline-flex;  
+    display: inline-flex; 
 }
 a {
     color: black;
     font-size: 25px;
     padding-right: 40px;
+    letter-spacing: 2px; 
 }
 a:hover{
     color: orangered;
@@ -126,7 +127,6 @@ header .donate-btn:hover{
 .section-main form {
     margin-top: 100px;
     display: flex;
-
 }
 .section-main form input {
     border: none;
@@ -135,13 +135,20 @@ header .donate-btn:hover{
     border-radius: 50px;
 }
 .section-main form button {
+    margin-left: 20px;
     background: orange;
     padding: 20px 50px;
     border: none;
     outline: none;
-    letter-spacing: 1px;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    font-size: 20px;
     cursor: pointer;
+    font-weight: 600;
     font-family: 'Big Shoulders Display', cursive;
+}
+.section-main form button:hover {
+    background-color: orangered;
 }
 /* Newsletter Form*/
 #newsletter-form {

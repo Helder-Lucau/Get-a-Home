@@ -115,15 +115,6 @@ function addDonor(donorObj){
     })
 }
 
-//Search function to loop through the array and fetch location data
-function searchButton() {
-
-    let location = []
-    fetch(`${apiURL}/camps`)
-    .then(res => res.json())
-    .then(data => location = data.map(obj => obj.location))
-}
-
 //Selecting newsletter form and assigning an event listener Click
 document.querySelector("#newsletter-form").addEventListener('submit', handleNewsletterSubmit)
 
