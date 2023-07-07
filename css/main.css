@@ -94,9 +94,7 @@ header .donate-btn:hover{
     font-family: 'Amatic SC', cursive; 
 }
 .camp-list {
-    display: inline-block;
-    margin-right: 100px;
-    align-items: center;
+
 }
 .camp-list img {
     margin-top: 30px;
@@ -126,27 +124,6 @@ header .donate-btn:hover{
     letter-spacing: 1px;
     cursor: pointer;
 }
-.bg-modal {
-    position: fixed;
-    background-color:rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-.modal-content {
-    width: 700px;
-    height: 600px;
-    text-align: center;
-    background-color: white;
-    border-radius: 20px;
-    padding: 100px;
-    position: relative;
-}
 header form input {
     width: 50%;
     display: block;
@@ -162,19 +139,8 @@ header .modal-content .close {
     transform: rotate(45deg);
     cursor: pointer;
 }
-form .dnt-btn {
-    background: orange;
-    padding: 20px 50px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-form .dnt-btn:hover {
-    background-color: orangered;
-}
 
+/* Newsletter Form*/
 #newsletter-form {
     background-color: orange;
     width: auto;
@@ -210,4 +176,46 @@ form .dnt-btn:hover {
     border-radius: 5px;
     font-weight: 600;
     margin-top: 20px;
+    text-transform: uppercase;
+}
+#newsletter-form button:hover {
+    background-color: orangered;
+}
+/* Modal box form*/
+.bg-modal {
+    position: fixed;
+    background-color:rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    width: 700px;
+    height: 600px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 100px;
+    position: relative;
+}
+.modal-content input {
+    font-size: 15px;
+    padding: 10px 10px;
+    font-family: 'Playfair Display', serif;
+}
+.modal-content input.dnt-btn {
+    background: orange;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+form .dnt-btn:hover {
+    background-color: orangered;
 }
