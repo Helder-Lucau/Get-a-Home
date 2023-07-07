@@ -6,7 +6,6 @@
 
 The website can:
 *List camps and shelter homes
-*Search by country 
 *Donate button 
 *Subscribe to newsletter
 
@@ -17,9 +16,14 @@ The website can:
 * Javascript
 * JSON
 
-## Setup Requirements
+## Installation
 
 * Web-browser of your choice (Chrome, Firefox)
+
+## Screenshoots
+
+### Landing Page Screenshot
+<img src="./images/landingpage.png" alt="landingpage">
 
 ## Author
 * This project code files is authored by [Helder Lucau](https://github.com/Helder-Lucau).
