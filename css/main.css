@@ -101,22 +101,49 @@ header .donate-btn:hover{
     letter-spacing: 5px;
 }
 .camp-content {
-    width: 1000px;
-    margin: auto;
-    margin-top: 50px;
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 30px;
 }   
 .camp-list {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
-    width: 600px;
+    width: 700px;
     text-align: center;
     letter-spacing: 2px;
+    float:left;
+    margin: 60px;
     font-family: 'Big Shoulders Display', cursive;
 }
-
 .camp-list img {
     margin-top: 30px;
     width: 600px;
     height: 600px;
+}
+.camp-list h3 {
+    font-size: 20px;
+}
+.camp-list p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.camp-list button {
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    background-color: orange;
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Big Shoulders Display', cursive; 
+}
+.camp-list span {
+    color: orangered;
+    font-weight: 800;
+
 }
 /* Search Button Styling */
 .form-container{

@@ -26,7 +26,7 @@ function fetchCampsData(){
            camp.innerHTML = `
                 <img src="${campData.image}" alt="${campData.image}" class="camp-poster">
                 <h3>${campData.campname}</h3>
-                <p>Country: ${campData.location}</p>
+                <p><span>Country:</span> ${campData.location}</p>
            `
            const readMore = document.createElement('button')
            readMore.className = 'read-more'
