@@ -19,10 +19,10 @@ header {
     font-family: 'Playfair Display', serif;
 }
 .logo {
-    width: 200px;
+    width: 200px;   
 }
 nav {
-    margin-left: 25%;
+    margin-left: 20%;
 }
 nav ul li {
     display: inline-flex;  
@@ -30,7 +30,7 @@ nav ul li {
 a {
     color: black;
     font-size: 25px;
-    padding-right: 50px;
+    padding-right: 25px;
 }
 a:hover{
     color: orangered;
