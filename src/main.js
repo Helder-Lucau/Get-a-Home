@@ -30,6 +30,9 @@ const searchInput = document.querySelector('form')
 document.querySelector('.donate-btn').addEventListener('click', function(){
     document.querySelector('.bg-modal').style.display = 'flex'
 })
+document.querySelector('.close').addEventListener('click', function(){
+    document.querySelector('.bg-modal').style.display = 'none'
+})
  
         //data validation 
 function fetchCampsData(){
@@ -101,6 +104,33 @@ function campsDataDetails(campData){
     volunteerBtn.innerText = "Volunteer";
     campProfile.append(volunteerBtn);
    
+}
+
+document.querySelector("#modal-form").addEventListener('submit', handleDonorSubmit)
+
+
+function handleDonorSubmit(e){
+    e.preventDefault()
+    let donorObj = {
+        donorName:e.target.donor.value,
+        paymentCard:e.target.payment.value,
+        donation:e.target.donation.value,
+        email:e.target.email.value
+    }
+    addDonor(donorObj)
+}
+
+function addDonor(donorObj){
+        
+        fetch(`${apiURL}/donor`,{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(donorObj)
+        })
+    .then(res => res.json())
+    .then(donorData => console.log(donorData))
 }
 
 function initialize(){

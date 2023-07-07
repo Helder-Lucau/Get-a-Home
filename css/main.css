@@ -137,19 +137,21 @@ header .donate-btn:hover{
     cursor: pointer;
 }
 .bg-modal {
-    width: 100%;
-    height: 100%;
+    position: fixed;
     background-color:rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     display: none;
 }
 .modal-content {
-    width: 500px;
-    height: 600px;
+    width: 800px;
+    height: 800px;
     text-align: center;
     background-color: white;
     border-radius: 20px;
@@ -170,7 +172,16 @@ header .modal-content .close {
     font-size: 45px;
     transform: rotate(45deg);
     cursor: pointer;
-
+}
+.modal-form .dnt-btn {
+    background: orange;
+    padding: 20px 50px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.modal-form .dnt-btn:hover {
+    background-color: orangered;
 }
 footer {
     background-color: orange;
