@@ -95,7 +95,7 @@ function handleDonorSubmit(e){
     addDonor(donorObj)
 }
 
-//function that POST data on the db
+//function that POST donor data into the db
 function addDonor(donorObj){
         
         fetch(`${apiURL}/donor`,{
@@ -108,6 +108,7 @@ function addDonor(donorObj){
     .then(res => res.json())
     .then(donorData => {
         console.log(donorData)
+        alert('Thank you for your donation')
     })
     .catch(error => {
         console.log('Error:', error);
@@ -165,5 +166,6 @@ function addNewsletter(newsletterObj){
 function initialize(){
 
     fetchCampsData()
+
 }
 initialize()
