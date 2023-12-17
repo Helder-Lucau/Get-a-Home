@@ -1,4 +1,4 @@
-const apiURL = 'https://main-json.onrender.com'
+// const apiURL = 'https://main-json.onrender.com'
 const campList = document.querySelector(".camp-content")
 const campDetails = document.querySelector(".camp-details")
 const searchInput = document.getElementById('search-form')
@@ -7,47 +7,47 @@ const searchBtn = document.querySelector('#search')
 
 //Modal box pop up
 //Displays a input form to enter donation details
-document.querySelector('.donate-btn').addEventListener('click', function(){
+document.querySelector('.donate-btn').addEventListener('click', function () {
     document.querySelector('.bg-modal').style.display = 'flex'
 })
 
-document.querySelector('.close').addEventListener('click', function(){
+document.querySelector('.close').addEventListener('click', function () {
     document.querySelector('.bg-modal').style.display = 'none'
 })
-  
-function fetchCampsData(){
-    fetch(`${apiURL}/camps`)
-    .then((res) => res.json())
-    .then((data) => {
-        data.forEach((campData)  => {
 
-           const camp = document.createElement('div')
-           camp.className = 'camp-list'
-           camp.innerHTML = `
+function fetchCampsData() {
+    fetch(`${apiURL}/camps`)
+        .then((res) => res.json())
+        .then((data) => {
+            data.forEach((campData) => {
+
+                const camp = document.createElement('div')
+                camp.className = 'camp-list'
+                camp.innerHTML = `
                 <img src="${campData.image}" alt="${campData.image}" class="camp-poster">
                 <h3>${campData.campname}</h3>
                 <p><span>Country:</span> ${campData.location}</p>
            `
-           const readMore = document.createElement('button')
-           readMore.className = 'read-more'
-           readMore.innerText = 'READ MORE'
+                const readMore = document.createElement('button')
+                readMore.className = 'read-more'
+                readMore.innerText = 'READ MORE'
 
-           camp.appendChild(readMore)
-           campList.appendChild(camp)
+                camp.appendChild(readMore)
+                campList.appendChild(camp)
 
-           readMore.addEventListener('click', (e) => {
-                e.preventDefault()
-                campsDataDetails(campData)
-           })
+                readMore.addEventListener('click', (e) => {
+                    e.preventDefault()
+                    campsDataDetails(campData)
+                })
+            })
         })
-    })
-    .catch(error => {
-        console.log('Error:', error);
-    })
+        .catch(error => {
+            console.log('Error:', error);
+        })
 }
 
 //Function that fetch camp data from db.json
-function campsDataDetails(campData){
+function campsDataDetails(campData) {
 
     campDetails.innerHTML = "";
 
@@ -78,75 +78,92 @@ function campsDataDetails(campData){
     const cap = document.createElement("p");
     cap.className = "camp-cap";
     cap.innerText = `Capacity: ${campData.people} People`;
-    campProfile.appendChild(cap); 
+    campProfile.appendChild(cap);
 }
 
 //Submitting the values the user entered to the db
 document.querySelector("#modal-form").addEventListener('submit', handleDonorSubmit)
 
-function handleDonorSubmit(e){
+function handleDonorSubmit(e) {
     e.preventDefault()
     let donorObj = {
-        donorName:e.target.donor.value,
-        paymentCard:e.target.payment.value,
-        donation:e.target.donation.value,
-        email:e.target.email.value
+        donorName: e.target.donor.value,
+        paymentCard: e.target.payment.value,
+        donation: e.target.donation.value,
+        email: e.target.email.value
     }
     addDonor(donorObj)
 }
 
 //function that POST donor data into the db
-function addDonor(donorObj){
-        
-        fetch(`${apiURL}/donor`,{
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(donorObj)
+function addDonor(donorObj) {
+
+    fetch(`${apiURL}/donor`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(donorObj)
+    })
+        .then(res => res.json())
+        .then(donorData => {
+            console.log(donorData)
+            alert('Thank you for your donation')
         })
-    .then(res => res.json())
-    .then(donorData => {
-        console.log(donorData)
-        alert('Thank you for your donation')
-    })
-    .catch(error => {
-        console.log('Error:', error);
-    })
+        .catch(error => {
+            console.log('Error:', error);
+        })
 }
 
 //Selecting newsletter form and assigning an event listener Click
 document.querySelector("#newsletter-form").addEventListener('submit', handleNewsletterSubmit)
 
-function handleNewsletterSubmit(e){
+function handleNewsletterSubmit(e) {
     e.preventDefault()
     let newsletterObj = {
-        subscribeEmail:e.target.newsletter.value
+        subscribeEmail: e.target.newsletter.value
     }
     addNewsletter(newsletterObj)
 }
 
 //function that POST subscribe to newsletter email data on the db
-function addNewsletter(newsletterObj){
-        
-        fetch(`${apiURL}/newsletter`,{
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(newsletterObj)
+function addNewsletter(newsletterObj) {
+
+    fetch(`${apiURL}/newsletter`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newsletterObj)
+    })
+        .then(res => res.json())
+        .then(subscribeData => {
+            console.log(subscribeData)
+            alert("Thank you for subscribing")
         })
-    .then(res => res.json())
-    .then(subscribeData => {
-        console.log(subscribeData)
-        alert("Thank you for subscribing")
-    })
-    .catch(error => {
-        console.log('Error:', error);
-    })
+        .catch(error => {
+            console.log('Error:', error);
+        })
 }
 
-function initialize(){
+//Navbar submenu dropdown  
+function toggleDropdown() {
+    let dropdown = document.querySelector('#dropdownButton #dropdown')
+    dropdown.classList.toggle("hidden")
+}
+
+//Sidebar submenu dropdown function
+function toggleSidebarDropdown() {
+    let dropdown = document.querySelector('#dropdownSidebar #sidebarDrop')
+    dropdown.classList.toggle("hidden")
+}
+
+//Close sidebar Menu
+document.getElementById('closeMenu').addEventListener('click', function () {
+    document.getElementById('closeNav').classList.toggle('hidden')
+})
+
+function initialize() {
 
     fetchCampsData()
 

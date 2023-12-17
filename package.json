@@ -1,0 +1,23 @@
+{
+  "name": "phase-1-final-project",
+  "version": "1.0.0",
+  "description": "## DESCRIPTION",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss-cli": "^11.0.0",
+    "react-icons": "^4.12.0",
+    "watch": "^1.0.2"
+  },
+  "scripts": {
+    "build": "tailwindcss -i ./css/main.css -o ./build/output.css",
+    "watch": "tailwindcss -i ./css/main.css -o ./build/output.css --watch"
+ 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.6"
+  }
+}
