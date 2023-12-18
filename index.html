@@ -14,20 +14,31 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <div>
       <!--Navigation Bar-->
       <header>
-        <nav
-          class="p-5 bg-white shadow md:flex md:items-center md:justify-between"
-        >
-          <div>
-            <a href="index.html">
-              <img src="./media/logo.png" alt="logo" class="h-10" />
+        <nav class="bg-white p-5 shadow md:flex md:items-center md:justify-between">
+          <div class="flex justify-between items-center">
+            <a href="index.html" class="cursor-pointer">
+              <img src="./media/logo.png" alt="logo" class="h-10 inline" />
             </a>
+            <span class="cursor-pointer md:hidden mx-2 block">
+              <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
           </div>
-          <ul class="md:flex md:items-center z-[-1] md:z-auto md:static">
+          <ul
+            class="md:flex md:items-center z-[-1] md:z-auto md:static bg-white left-0 md:w-auto md:py-0 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[400px] transition-all ease-in duration-500"
+          >
             <li>
               <a href="#" class="mx-4 my-6 md:my-0">Home</a>
             </li>
@@ -44,7 +55,7 @@
               >
                 Get Involved<img width="20" src="/media/down.svg" />
               </li>
-              <!--Dropdown Menu-->
+              <!--DROPDOWN MENU-->
               <div
                 id="dropdown"
                 class="md:absolute relative border-[1px] border-gray-500 bg-white md:w-[150px] w-full shadow-sm font-medium hidden"

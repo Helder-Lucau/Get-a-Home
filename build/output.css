@@ -605,10 +605,6 @@ h1{
   }
 }
 
-.fixed{
-  position: fixed;
-}
-
 .absolute{
   position: absolute;
 }
@@ -619,6 +615,10 @@ h1{
 
 .left-0{
   left: 0px;
+}
+
+.top-\[400px\]{
+  top: 400px;
 }
 
 .top-\[60px\]{
@@ -637,6 +637,11 @@ h1{
   z-index: -1;
 }
 
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mx-4{
   margin-left: 1rem;
   margin-right: 1rem;
@@ -645,6 +650,14 @@ h1{
 .my-6{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.block{
+  display: block;
+}
+
+.inline{
+  display: inline;
 }
 
 .flex{
@@ -718,6 +731,11 @@ h1{
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
 
+.border-gray-50{
+  --tw-border-opacity: 1;
+  border-color: rgb(249 250 251 / var(--tw-border-opacity));
+}
+
 .bg-gray-100\/90{
   background-color: rgb(243 244 246 / 0.9);
 }
@@ -754,6 +772,10 @@ h1{
   padding-right: 1rem;
 }
 
+.pl-7{
+  padding-left: 1.75rem;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -786,6 +808,14 @@ h1{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.opacity-0{
+  opacity: 0;
+}
+
+.opacity-100{
+  opacity: 1;
+}
+
 .shadow{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -796,6 +826,20 @@ h1{
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-500{
+  transition-duration: 500ms;
+}
+
+.ease-in{
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 /* nav {
@@ -1121,11 +1165,28 @@ header .modal-content .close {
     width: 150px;
   }
 
+  .md\:w-auto{
+    width: auto;
+  }
+
   .md\:items-center{
     align-items: center;
   }
 
   .md\:justify-between{
     justify-content: space-between;
+  }
+
+  .md\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .md\:pl-0{
+    padding-left: 0px;
+  }
+
+  .md\:opacity-100{
+    opacity: 1;
   }
 }
