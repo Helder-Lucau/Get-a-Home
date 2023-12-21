@@ -690,6 +690,16 @@ h1{
   margin-bottom: auto;
 }
 
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .block{
   display: block;
 }
@@ -773,6 +783,10 @@ h1{
 
 .max-w-md{
   max-width: 28rem;
+}
+
+.flex-grow{
+  flex-grow: 1;
 }
 
 .cursor-pointer{
@@ -1482,6 +1496,11 @@ header .modal-content .close {
   .md\:mx-auto{
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .md\:my-2{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .md\:block{
