@@ -159,15 +159,15 @@ function toggleSidebarDropdown() {
 }
 
 //Close sidebar Menu
-function Menu(e) {
-    let list = document.querySelector('ul');
-    e.name === 'menu'
-        ? ((e.name = 'close'),
-            list.classList.add('top-[80px]'),
-            list.classList.add('opacity-100'))
-        : ((e.name = 'menu'),
-            list.classList.remove('top-[80px]'),
-            list.classList.remove('opacity-100'));
+function Menu(event) {
+    let icon = document.querySelector('ul');
+    event.name === 'menu'
+        ? ((event.name = 'close'),
+            icon.classList.add('top-[80px]'),
+            icon.classList.add('opacity-100'))
+        : ((event.name = 'menu'),
+            icon.classList.remove('top-[80px]'),
+            icon.classList.remove('opacity-100'));
 }
 
 function initialize() {

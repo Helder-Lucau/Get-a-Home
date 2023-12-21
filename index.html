@@ -25,63 +25,84 @@
   </head>
   <body>
     <div>
-      <!--Navigation Bar-->
-      <header>
-        <nav class="bg-white p-5 shadow md:flex md:items-center md:justify-between">
-          <div class="flex justify-between items-center">
-            <a href="index.html" class="cursor-pointer">
-              <img src="./media/logo.png" alt="logo" class="h-10 inline" />
-            </a>
-            <span class="cursor-pointer md:hidden mx-2 block">
-              <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-            </span>
+      <!--NAVIGATION BAR-->
+      <nav
+        class="uppercase shadow-md md:flex md:items-center md:justify-between relative z-10 font-bold"
+      >
+        <div class="flex justify-between items-center">
+          <a href="index.html" class="cursor-pointer">
+            <img src="./media/logo.png" alt="logo" class="h-20" />
+          </a>
+          <div class="cursor-pointer md:hidden mx-2 block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
           </div>
-          <ul
-            class="md:flex md:items-center z-[-1] md:z-auto md:static bg-white left-0 md:w-auto md:py-0 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[400px] transition-all ease-in duration-500"
-          >
-            <li>
-              <a href="#" class="mx-4 my-6 md:my-0">Home</a>
+        </div>
+        <ul
+          class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-0 md:pl-0 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-300"
+        >
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#">Home</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#">About</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#">Our Work</a>
+          </li>
+          <div id="dropdownButton">
+            <li
+              class="cursor-pointer flex justify-between select-none mx-4 my-6 md:my-0"
+              onclick="toggleDropdown()"
+            >
+              Get Involved<img width="20" src="/media/down.svg" />
             </li>
-            <li>
-              <a href="#" class="mx-4 my-6 md:my-0">About</a>
-            </li>
-            <li>
-              <a href="#" class="mx-4 my-6 md:my-0">Our Work</a>
-            </li>
-            <div id="dropdownButton">
-              <li
-                class="cursor-pointer flex justify-between select-none mx-4 my-6 md:my-0"
-                onclick="toggleDropdown()"
-              >
-                Get Involved<img width="20" src="/media/down.svg" />
-              </li>
-              <!--DROPDOWN MENU-->
-              <div
-                id="dropdown"
-                class="md:absolute relative border-[1px] border-gray-500 bg-white md:w-[150px] w-full shadow-sm font-medium hidden"
-              >
-                <div class="cursor-pointer hover:bg-[#faa307] p-4">
-                  Volunteer
-                </div>
-                <div class="cursor-pointer hover:bg-[#faa307] p-4">Events</div>
-                <div class="cursor-pointer hover:bg-[#faa307] p-4">
-                  Advocate
-                </div>
-                <div class="cursor-pointer hover:bg-[#faa307] p-4">
-                  Donate Goods
-                </div>
-                <div class="cursor-pointer hover:bg-[#faa307] p-4">Careers</div>
+            <!--DROPDOWN MENU-->
+            <div
+              id="dropdown"
+              class="md:absolute relative rounded-md border-[1px] border-gray-500 bg-white md:w-[150px] w-[350px] shadow-sm font-medium hidden"
+            >
+              <div class="cursor-pointer hover:bg-[#faa307] p-4">Volunteer</div>
+              <div class="cursor-pointer hover:bg-[#faa307] p-4">Events</div>
+              <div class="cursor-pointer hover:bg-[#faa307] p-4">Advocate</div>
+              <div class="cursor-pointer hover:bg-[#faa307] p-4">
+                Donate Goods
               </div>
+              <div class="cursor-pointer hover:bg-[#faa307] p-4">Careers</div>
             </div>
-            <li>
-              <a href="#" class="mx-4 my-6 md:my-0">News & Stories</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+          </div>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#">News & Stories</a>
+          </li>
+          <!--SEARCH BAR FORM-->
+          <div class="mx-4 my-6 md:my-0">
+            <form action="" class="relative mx-4 w-auto">
+              <input
+                placeholder="Search"
+                type="search"
+                class="peer cursor-pointer relative z-10 h-12 w-12 rounded-full border bg-transparent pl-12 outline-none placeholder:italic placeholder:text-base transition-all duration-150 focus:w-full focus:cursor-text focus:border-black focus:pl-16 focus:pr-4"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute inset-y-0 my-auto h-8 w-12 border-r border-transparent stroke-gray-500 px-3.5 peer-focus:border-black peer-focus:stroke-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </form>
+          </div>
+        </ul>
+      </nav>
+    </div>
 
-      <!--Modal Box when clicked donate button opens a pop up box-->
-      <div class="bg-modal">
+    <!--Modal Box when clicked donate button opens a pop up box-->
+    <!-- <div class="bg-modal">
         <div class="modal-content">
           <div class="close">+</div>
           <h2>Secure donation</h2>
@@ -108,31 +129,29 @@
             <input type="number" id="donation" min="1" max="1000" required />
             <input type="submit" class="dnt-btn" value="donate" />
           </form>
-        </div>
-      </div>
+        </div> -->
+    <!-- </div> -->
 
-      <!--HERO SECTION-->
-      <div class="w-full h-screen">
-        <img src="./media/refugee.jpg" />
-        <!-- <video src="./media/video.mp4" class="w-full h-full object-cover" autoplay loop muted></video> -->
-        <div class="main-intro">
-          <h2>
-            Your generous <span>gift</span> can make a
-            <span>generational impact</span>
-          </h2>
-          <p>
-            <span>Get a Home</span> helps to save lives and build better futures
-            for the millions of people forced to flee their homes. <br />
-            Your generosity can provide lasting change for families for years to
-            come.
-          </p>
-          <div class="form-container">
-            <form id="search-form">
-              <input type="text" id="search" placeholder="search by country" />
-              <button type="submit" class="btn">Search</button>
-            </form>
-            <div id="search-result"></div>
-          </div>
+    <!--HERO SECTION-->
+    <div class="w-full h-screen">
+      <img src="./media/refugee.jpg" class="w-full h-full object-cover" />
+      <div class="main-intro">
+        <h2>
+          Your generous <span>gift</span> can make a
+          <span>generational impact</span>
+        </h2>
+        <p>
+          <span>Get a Home</span> helps to save lives and build better futures
+          for the millions of people forced to flee their homes. <br />
+          Your generosity can provide lasting change for families for years to
+          come.
+        </p>
+        <div class="form-container">
+          <form id="search-form">
+            <input type="text" id="search" placeholder="search by country" />
+            <button type="submit" class="btn">Search</button>
+          </form>
+          <div id="search-result"></div>
         </div>
       </div>
     </div>
