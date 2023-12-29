@@ -33,7 +33,7 @@
           <a href="index.html" class="cursor-pointer">
             <img src="./media/logo.png" alt="logo" class="h-20" />
           </a>
-          <div class="cursor-pointer md:hidden mx-2 block">
+          <div class="cursor-pointer md:hidden mx-2 block text-3xl">
             <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
           </div>
         </div>
@@ -51,23 +51,49 @@
           </li>
           <div id="dropdownButton">
             <li
-              class="cursor-pointer flex justify-between items-center select-none mx-4 my-6 md:my-0"
-              onclick="toggleDropdown()"
+              class="cursor-pointer flex justify-between items-center mx-4 my-6 md:my-0"
+              onclick="toggleDropdown(this)"
             >
-              Get Involved<ion-icon name="chevron-down-outline" class="mx-2"></ion-icon>
+              Get Involved<ion-icon name="chevron-down-outline"></ion-icon>
             </li>
             <!--DROPDOWN MENU-->
-            <div
-              id="dropdown"
-              class="md:absolute relative rounded-md border-[1px] border-gray-500 bg-white md:w-[150px] w-[350px] shadow-sm font-medium hidden"
-            >
-              <div class="cursor-pointer hover:bg-[#faa307] p-4">Volunteer</div>
-              <div class="cursor-pointer hover:bg-[#faa307] p-4">Events</div>
-              <div class="cursor-pointer hover:bg-[#faa307] p-4">Advocate</div>
-              <div class="cursor-pointer hover:bg-[#faa307] p-4">
-                Donate Goods
+            <div id="dropdown" class="px-8 text-left md:cursor-pointer hidden">
+              <div class="md:absolute md:top-20">
+                <div class="md:py-3">
+                  <div
+                    class="w-4 h-4 left-5 md:relative bg-white rotate-45"
+                  ></div>
+                  <div
+                    class="bg-white rounded md:-mt-2 top-0 border border-gray-200 shadow-md"
+                  >
+                    <li
+                      class="cursor-pointer block px-3 py-1 text-sm text-gray-500 hover:bg-gray-100"
+                    >
+                      Volunteer
+                    </li>
+                    <li
+                      class="cursor-pointer block px-3 py-1 text-sm text-gray-500 hover:bg-gray-100"
+                    >
+                      Events
+                    </li>
+                    <li
+                      class="cursor-pointer block px-3 py-1 text-sm text-gray-500 hover:bg-gray-100"
+                    >
+                      Advocate
+                    </li>
+                    <li
+                      class="cursor-pointer block px-3 py-1 text-sm text-gray-500 hover:bg-gray-100"
+                    >
+                      Donate Goods
+                    </li>
+                    <li
+                      class="cursor-pointer block px-3 py-1 text-sm text-gray-500 hover:bg-gray-100"
+                    >
+                      Careers
+                    </li>
+                  </div>
+                </div>
               </div>
-              <div class="cursor-pointer hover:bg-[#faa307] p-4">Careers</div>
             </div>
           </div>
           <li class="mx-4 my-6 md:my-0">
@@ -77,7 +103,7 @@
           <div class="mx-4 my-6 md:my-0">
             <form action="" class="relative mx-4 w-auto">
               <input
-                placeholder="Search"
+                placeholder="Search ..."
                 type="search"
                 class="peer cursor-pointer relative z-10 h-12 w-12 rounded-full border bg-transparent pl-12 outline-none placeholder:italic placeholder:text-base transition-all duration-150 focus:w-full focus:cursor-text focus:border-black focus:pl-16 focus:pr-4"
               />
@@ -100,6 +126,7 @@
         </ul>
       </nav>
     </div>
+    <!--End Navigation Bar-->
 
     <!--Modal Box when clicked donate button opens a pop up box-->
     <!-- <div class="bg-modal">
@@ -132,53 +159,159 @@
         </div> -->
     <!-- </div> -->
 
-    <!--HERO SECTION-->
-    <div class="w-full h-screen">
-      <img src="./media/refugee.jpg" class="w-full h-full object-cover" />
-      <div class="main-intro">
-        <h2>
-          Your generous <span>gift</span> can make a
-          <span>generational impact</span>
-        </h2>
-        <p>
-          <span>Get a Home</span> helps to save lives and build better futures
-          for the millions of people forced to flee their homes. <br />
-          Your generosity can provide lasting change for families for years to
-          come.
-        </p>
-        <div class="form-container">
-          <form id="search-form">
-            <input type="text" id="search" placeholder="search by country" />
-            <button type="submit" class="btn">Search</button>
-          </form>
-          <div id="search-result"></div>
+    <!--Carousel-->
+    <section class="font-intertight">
+      <div class="relative">
+        <div>
+          <ul id="slider">
+            <li class="md:h-[80vh] h-[50vh] relative">
+              <img
+                src="./media/ref1.jpg"
+                alt="refugeecamp"
+                class="h-full w-full object-cover"
+              />
+              <div class="absolute top-0 left-0 h-full w-full flex">
+                <h2
+                  class="md:text-6xl text-3xl font-bold text-white my-auto w-full text-center px-20"
+                >
+                  Your generous gift can make a generational impact
+                </h2>
+              </div>
+            </li>
+            <li class="md:h-[80vh] h-[50vh] relative hidden">
+              <img
+                src="./media/ref2.jpg"
+                alt="desertcamp"
+                class="h-full w-full object-cover"
+              />
+              <div class="absolute top-0 left-0 h-full w-full flex">
+                <h2
+                  class="text-4xl font-bold text-white my-auto w-full text-center px-20"
+                >
+                  Let's build a better world together
+                </h2>
+              </div>
+            </li>
+            <li class="md:h-[80vh] h-[50vh] relative hidden">
+              <img
+                src="./media/ref3.jpg"
+                alt="refugeecamp"
+                class="h-full w-full object-cover"
+              />
+              <div class="absolute top-0 left-0 h-full w-full flex">
+                <h2
+                  class="md:text-6xl text-3xl font-bold text-white my-auto w-full text-center px-20"
+                >
+                  Your generous gift can make a generational impact
+                </h2>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--Arrows Icons-->
+        <div class="absolute px-5 flex w-full h-full top-0 left-0">
+          <div class="my-auto w-full flex justify-between">
+            <!--Left Arrow Icon-->
+            <button
+              class="bg-white p-3 rounded-full opacity-80 shadow-lg"
+              onclick="prev()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                data-slot="icon"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+            <!--Right Arrow Icon-->
+            <button
+              class="bg-white p-3 rounded-full opacity-80 shadow-lg"
+              onclick="next()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                data-slot="icon"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-    <section class="section-two">
-      <div class="search-container">
-        <!--search results content-->
-      </div>
-      <div class="main-content">
-        <h2>CAMPS AND SHELTER HOMES</h2>
-        <!--Content-->
-        <div class="camp-content">
-          <!--shelter homes/refugee camps list content-->
-        </div>
-      </div>
-      <div class="camp-details">
-        <!--camps details content-->
-      </div>
     </section>
-    <!--Newsletter-->
-    <section id="newsletter-form">
-      <h2>Newsletter</h2>
-      <p>Keep up our latest news and events. Subscribe to our newsletter</p>
-      <form>
-        <input type="text" id="newsletter" placeholder="Enter your email" />
-        <button type="submit">Subscribe</button>
-      </form>
-    </section>
+    <!--End of Carousel Section-->
+
+    <script>
+      //Navbar submenu dropdown
+      function toggleDropdown(e) {
+        let arrow = document.querySelector('#dropdownButton #dropdown');
+        arrow.classList.toggle('hidden');
+        e.arrow === 'chevron-down';
+        // ? ((e.arrow = 'chevron-down'), arrow.classList.add('rotate-180'))
+        // : ((e.arrow = 'chevron-down'), arrow.classList.remove('rotate-180'));
+      }
+      //Open & Close sidebar Menu
+      function Menu(event) {
+        let icon = document.querySelector('ul');
+        event.name === 'menu'
+          ? ((event.name = 'close'),
+            icon.classList.add('top-[80px]'),
+            icon.classList.add('opacity-100'))
+          : ((event.name = 'menu'),
+            icon.classList.remove('top-[80px]'),
+            icon.classList.remove('opacity-100'));
+      }
+
+      //Carousel Function
+      currentSlideID = 1;
+
+      sliderElement = document.getElementById('slider');
+      totalSlides = sliderElement.childElementCount;
+
+      function next() {
+        if (currentSlideID < totalSlides) {
+          currentSlideID++;
+          showSlide();
+        }
+      }
+
+      function prev() {
+        if (currentSlideID > 1) {
+          currentSlideID--;
+          showSlide();
+        }
+      }
+
+      function showSlide() {
+        slides = document.getElementById('slider').getElementsByTagName('li');
+        for (let index = 0; index < totalSlides; index++) {
+          const element = slides[index];
+          if (currentSlideID === index + 1) {
+            element.classList.remove('hidden');
+          } else {
+            element.classList.add('hidden');
+          }
+        }
+      }
+    </script>
     <script src="./src/main.js" defer></script>
   </body>
 </html>

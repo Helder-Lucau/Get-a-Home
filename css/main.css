@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -22,7 +28,7 @@
   }
 }
 
-.main-intro {
+/* .main-intro {
   padding-top: 10%;
 }
 .main-intro h1 {
@@ -103,9 +109,9 @@
 .camp-list span {
   color: orangered;
   font-weight: 800;
-}
+} */
 /* Search Button Styling */
-.form-container {
+/* .form-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,9 +141,9 @@
 }
 .section-main form button:hover {
   background-color: orangered;
-}
+} */
 /* Newsletter Form*/
-#newsletter-form {
+/* #newsletter-form {
   background-color: orange;
   width: auto;
   height: 400px;
@@ -165,8 +171,8 @@
   padding: 15px 20px;
   margin-right: 10px;
   outline: none;
-}
-#newsletter-form button {
+} */
+/* #newsletter-form button {
   font-family: 'Big Shoulders Display', cursive;
   background: white;
   padding: 10px 40px;
@@ -180,9 +186,9 @@
 }
 #newsletter-form button:hover {
   background-color: orangered;
-}
+} */
 /* Modal box form*/
-.bg-modal {
+/* .bg-modal {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
@@ -193,8 +199,8 @@
   display: none;
   justify-content: center;
   align-items: center;
-}
-.modal-content {
+} */
+/* .modal-content {
   width: 700px;
   height: 600px;
   text-align: center;
@@ -215,8 +221,8 @@
   padding: 10px 5px;
   text-transform: uppercase;
   font-weight: 600;
-}
-form .dnt-btn:hover {
+} */
+/* form .dnt-btn:hover {
   background-color: orangered;
 }
 header form input {
@@ -233,4 +239,4 @@ header .modal-content .close {
   font-size: 45px;
   transform: rotate(45deg);
   cursor: pointer;
-}
+} */

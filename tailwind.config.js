@@ -12,7 +12,13 @@ export default {
         bigshoulder: ['Big Shoulders Display'],
         amatic: ['Amatic SC'],
         playfair: ['Playfair Display'],
-        poppins: ['Poppins']
+        poppins: ['Poppins'],
+        sairaextra: ['Saira Extra Condensed'],
+        oswald: ['Oswald'],
+        montserrat: ['Montserrat'],
+        raleway: ['Raleway'],
+        inter: ['Inter'],
+        intertight: ['Inter Tight']
       },
       screens: {
         'sm': '640px',
