@@ -658,6 +658,10 @@ h1{
   z-index: -1;
 }
 
+.m-auto{
+  margin: auto;
+}
+
 .mx-2{
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -685,10 +689,6 @@ h1{
 
 .ml-auto{
   margin-left: auto;
-}
-
-.mt-4{
-  margin-top: 1rem;
 }
 
 .mt-2{
@@ -755,8 +755,8 @@ h1{
   width: 100%;
 }
 
-.flex-shrink{
-  flex-shrink: 1;
+.max-w-\[1240px\]{
+  max-width: 1240px;
 }
 
 .flex-shrink-0{
@@ -785,12 +785,12 @@ h1{
   align-items: center;
 }
 
-.justify-between{
-  justify-content: space-between;
+.justify-center{
+  justify-content: center;
 }
 
-.justify-around{
-  justify-content: space-around;
+.justify-between{
+  justify-content: space-between;
 }
 
 .rounded{
@@ -801,8 +801,16 @@ h1{
   border-radius: 9999px;
 }
 
+.rounded-xl{
+  border-radius: 0.75rem;
+}
+
 .border{
   border-width: 1px;
+}
+
+.border-b-4{
+  border-bottom-width: 4px;
 }
 
 .border-r{
@@ -845,10 +853,6 @@ h1{
   padding: 0.75rem;
 }
 
-.p-4{
-  padding: 1rem;
-}
-
 .px-20{
   padding-left: 5rem;
   padding-right: 5rem;
@@ -862,6 +866,11 @@ h1{
 .px-3\.5{
   padding-left: 0.875rem;
   padding-right: 0.875rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-5{
@@ -884,14 +893,19 @@ h1{
   padding-bottom: 0.25rem;
 }
 
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-32{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .pl-12{
@@ -922,34 +936,6 @@ h1{
   font-family: Poppins;
 }
 
-.font-mono{
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-.font-bigshoulder{
-  font-family: Big Shoulders Display;
-}
-
-.font-amatic{
-  font-family: Amatic SC;
-}
-
-.font-sairaextra{
-  font-family: Saira Extra Condensed;
-}
-
-.font-raleway{
-  font-family: Raleway;
-}
-
-.font-montserrat{
-  font-family: Montserrat;
-}
-
-.font-oswald{
-  font-family: Oswald;
-}
-
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -974,18 +960,6 @@ h1{
   font-weight: 700;
 }
 
-.font-medium{
-  font-weight: 500;
-}
-
-.font-extralight{
-  font-weight: 200;
-}
-
-.font-light{
-  font-weight: 300;
-}
-
 .uppercase{
   text-transform: uppercase;
 }
@@ -999,19 +973,14 @@ h1{
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-gray-600{
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
-.text-gray-400{
+.text-white{
   --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .opacity-0{
@@ -1061,187 +1030,7 @@ h1{
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
-/* .main-intro {
-  padding-top: 10%;
-}
-.main-intro h1 {
-  font-size: 60px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-family: 'Amatic SC', cursive;
-}
-.main-intro h1 span {
-  color: orange;
-}
-
-.main-intro p {
-  margin-top: 20px;
-  font-size: 30px;
-  font-weight: bolder;
-  letter-spacing: 5px;
-  color: white;
-  font-family: 'Amatic SC', cursive;
-}
-.main-intro p span {
-  color: orange;
-  text-transform: uppercase;
-}
-.section-two {
-  height: auto;
-  width: auto;
-  text-align: center;
-}
-.main-content h2 {
-  font-size: 40px;
-  text-align: center;
-  margin-top: 50px;
-  font-family: 'Big Shoulders Display', cursive;
-  letter-spacing: 5px;
-}
-.camp-content {
-  display: inline-block;
-  margin-left: 200px;
-  margin-top: 30px;
-}
-.camp-list {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
-  width: 700px;
-  text-align: center;
-  letter-spacing: 2px;
-  float: left;
-  margin: 60px;
-  font-family: 'Big Shoulders Display', cursive;
-}
-.camp-list img {
-  margin-top: 30px;
-  width: 600px;
-  height: 600px;
-}
-.camp-list h3 {
-  font-size: 20px;
-}
-.camp-list p {
-  font-size: 20px;
-  font-weight: bold;
-}
-.camp-list button {
-  color: black;
-  font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 10px 25px;
-  background-color: orange;
-  border-radius: 10px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  border: none;
-  cursor: pointer;
-  font-family: 'Big Shoulders Display', cursive;
-}
-.camp-list span {
-  color: orangered;
-  font-weight: 800;
-} */
-
-/* Search Button Styling */
-
-/* .form-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.section-main form {
-  margin-top: 100px;
-  display: flex;
-}
-.section-main form input {
-  border: none;
-  outline: none;
-  padding: 20px 100px;
-  border-radius: 50px;
-}
-.section-main form button {
-  margin-left: 20px;
-  background: orange;
-  padding: 20px 50px;
-  border: none;
-  outline: none;
-  border-radius: 50px;
-  letter-spacing: 2px;
-  font-size: 20px;
-  cursor: pointer;
-  font-weight: 600;
-  font-family: 'Big Shoulders Display', cursive;
-}
-.section-main form button:hover {
-  background-color: orangered;
-} */
-
-/* Newsletter Form*/
-
-/* #newsletter-form {
-  background-color: orange;
-  width: auto;
-  height: 400px;
-  justify-content: center;
-  text-align: center;
-  display: grid;
-  font-family: 'Big Shoulders Display', cursive;
-}
-#newsletter-form h2 {
-  margin-top: 100px;
-  font-size: 40px;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 10px;
-}
-#newsletter-form p {
-  font-size: 25px;
-  letter-spacing: 2px;
-  font-weight: 600;
-}
-#newsletter-form input {
-  font-size: 20px;
-  width: 80%;
-  border: 2px solid black;
-  padding: 15px 20px;
-  margin-right: 10px;
-  outline: none;
-} */
-
-/* #newsletter-form button {
-  font-family: 'Big Shoulders Display', cursive;
-  background: white;
-  padding: 10px 40px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  border-radius: 2px;
-  font-weight: 600;
-  margin-top: 20px;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-#newsletter-form button:hover {
-  background-color: orangered;
-} */
-
-/* Modal box form*/
-
-/* .bg-modal {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  display: none;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .modal-content {
+.modal-content {
   width: 700px;
   height: 600px;
   text-align: center;
@@ -1250,11 +1039,13 @@ h1{
   padding: 100px;
   position: relative;
 }
+
 .modal-content input {
   font-size: 15px;
   padding: 10px 10px;
   font-family: 'Playfair Display', serif;
 }
+
 .modal-content input.dnt-btn {
   background: orange;
   cursor: pointer;
@@ -1262,11 +1053,12 @@ h1{
   padding: 10px 5px;
   text-transform: uppercase;
   font-weight: 600;
-} */
+}
 
-/* form .dnt-btn:hover {
+form .dnt-btn:hover {
   background-color: orangered;
 }
+
 header form input {
   width: 50%;
   display: block;
@@ -1274,6 +1066,7 @@ header form input {
   text-align: center;
   padding-top: 10px;
 }
+
 header .modal-content .close {
   position: absolute;
   top: 0;
@@ -1281,7 +1074,7 @@ header .modal-content .close {
   font-size: 45px;
   transform: rotate(45deg);
   cursor: pointer;
-} */
+}
 
 .placeholder\:text-base::-moz-placeholder{
   font-size: 1rem;
@@ -1357,22 +1150,17 @@ header .modal-content .close {
     z-index: auto;
   }
 
-  .md\:m-auto{
-    margin: auto;
-  }
-
   .md\:my-0{
     margin-top: 0px;
     margin-bottom: 0px;
   }
 
-  .md\:mx-auto{
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .md\:-mt-2{
     margin-top: -0.5rem;
+  }
+
+  .md\:mt-4{
+    margin-top: 1rem;
   }
 
   .md\:flex{
@@ -1411,10 +1199,6 @@ header .modal-content .close {
     justify-content: space-between;
   }
 
-  .md\:justify-around{
-    justify-content: space-around;
-  }
-
   .md\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
@@ -1425,8 +1209,18 @@ header .modal-content .close {
     padding-bottom: 0.75rem;
   }
 
+  .md\:py-64{
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+  }
+
   .md\:pl-0{
     padding-left: 0px;
+  }
+
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .md\:text-6xl{

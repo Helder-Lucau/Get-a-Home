@@ -28,179 +28,7 @@
   }
 }
 
-/* .main-intro {
-  padding-top: 10%;
-}
-.main-intro h1 {
-  font-size: 60px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-family: 'Amatic SC', cursive;
-}
-.main-intro h1 span {
-  color: orange;
-}
-
-.main-intro p {
-  margin-top: 20px;
-  font-size: 30px;
-  font-weight: bolder;
-  letter-spacing: 5px;
-  color: white;
-  font-family: 'Amatic SC', cursive;
-}
-.main-intro p span {
-  color: orange;
-  text-transform: uppercase;
-}
-.section-two {
-  height: auto;
-  width: auto;
-  text-align: center;
-}
-.main-content h2 {
-  font-size: 40px;
-  text-align: center;
-  margin-top: 50px;
-  font-family: 'Big Shoulders Display', cursive;
-  letter-spacing: 5px;
-}
-.camp-content {
-  display: inline-block;
-  margin-left: 200px;
-  margin-top: 30px;
-}
-.camp-list {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
-  width: 700px;
-  text-align: center;
-  letter-spacing: 2px;
-  float: left;
-  margin: 60px;
-  font-family: 'Big Shoulders Display', cursive;
-}
-.camp-list img {
-  margin-top: 30px;
-  width: 600px;
-  height: 600px;
-}
-.camp-list h3 {
-  font-size: 20px;
-}
-.camp-list p {
-  font-size: 20px;
-  font-weight: bold;
-}
-.camp-list button {
-  color: black;
-  font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 10px 25px;
-  background-color: orange;
-  border-radius: 10px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  border: none;
-  cursor: pointer;
-  font-family: 'Big Shoulders Display', cursive;
-}
-.camp-list span {
-  color: orangered;
-  font-weight: 800;
-} */
-/* Search Button Styling */
-/* .form-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.section-main form {
-  margin-top: 100px;
-  display: flex;
-}
-.section-main form input {
-  border: none;
-  outline: none;
-  padding: 20px 100px;
-  border-radius: 50px;
-}
-.section-main form button {
-  margin-left: 20px;
-  background: orange;
-  padding: 20px 50px;
-  border: none;
-  outline: none;
-  border-radius: 50px;
-  letter-spacing: 2px;
-  font-size: 20px;
-  cursor: pointer;
-  font-weight: 600;
-  font-family: 'Big Shoulders Display', cursive;
-}
-.section-main form button:hover {
-  background-color: orangered;
-} */
-/* Newsletter Form*/
-/* #newsletter-form {
-  background-color: orange;
-  width: auto;
-  height: 400px;
-  justify-content: center;
-  text-align: center;
-  display: grid;
-  font-family: 'Big Shoulders Display', cursive;
-}
-#newsletter-form h2 {
-  margin-top: 100px;
-  font-size: 40px;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 10px;
-}
-#newsletter-form p {
-  font-size: 25px;
-  letter-spacing: 2px;
-  font-weight: 600;
-}
-#newsletter-form input {
-  font-size: 20px;
-  width: 80%;
-  border: 2px solid black;
-  padding: 15px 20px;
-  margin-right: 10px;
-  outline: none;
-} */
-/* #newsletter-form button {
-  font-family: 'Big Shoulders Display', cursive;
-  background: white;
-  padding: 10px 40px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  border-radius: 2px;
-  font-weight: 600;
-  margin-top: 20px;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-#newsletter-form button:hover {
-  background-color: orangered;
-} */
-/* Modal box form*/
-/* .bg-modal {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  display: none;
-  justify-content: center;
-  align-items: center;
-} */
-/* .modal-content {
+.modal-content {
   width: 700px;
   height: 600px;
   text-align: center;
@@ -221,8 +49,8 @@
   padding: 10px 5px;
   text-transform: uppercase;
   font-weight: 600;
-} */
-/* form .dnt-btn:hover {
+}
+form .dnt-btn:hover {
   background-color: orangered;
 }
 header form input {
@@ -239,4 +67,4 @@ header .modal-content .close {
   font-size: 45px;
   transform: rotate(45deg);
   cursor: pointer;
-} */
+}

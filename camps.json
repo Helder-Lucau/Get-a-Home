@@ -1,5 +1,4 @@
-{
-  "camps": [
+  [
     {
       "id": 1,
       "campname": "Prophet Reward Foundation",
@@ -23,7 +22,7 @@
       "campname": "Shelter of hope",
       "image": "https://images.unsplash.com/photo-1625641819830-bf7ec1d5a816?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1130&q=80",
       "description":"We have the call and responsibility to reach out to the children and youths who are orphans and destitute by providing spiritual confidence to enable them be part of the achievement in the society. Through the course of our work, we have initiated programs to cater for women through empowerment strategies and support to the elderly widows.",
-      "location":"Congo",
+      "location":"Indonesia",
       "people": 18,
       "money": 1500
     },
@@ -41,7 +40,7 @@
       "campname": "CARE International",
       "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2022-10/221006-al-hol-syria-2019-ew-1034a-7a895e.jpg",
       "description":"We seek a world of hope, tolerance and social justice, where poverty has been overcome and all people live in dignity and security.",
-      "location":"Turkey",
+      "location":"Somalia",
       "people": 250,
       "money": 50 
     },
@@ -50,9 +49,8 @@
       "campname": "Made in the Streets",
       "image": "https://nbcpalmsprings.com/wp-content/uploads/sites/8/2017/09/14989134_g.jpg",
       "description":"We put women and girls in the centre because we know that we cannot overcome poverty until all people have equal rights and opportunities.",
-      "location":"Poland",
+      "location":"UK",
       "people": 250,
       "money": 5400 
     } 
   ]
-}
