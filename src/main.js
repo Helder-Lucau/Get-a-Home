@@ -17,13 +17,12 @@ function fetchCampsData() {
             return res.json()
         })
         .then((data) => {
-            console.log(data);
             data.forEach((campData) => {
 
                 const camp = document.createElement('div')
                 camp.className = 'camp-list'
                 camp.innerHTML = `
-                    <img src="${campData.image}" alt="${campData.image}" class="camp-poster">
+                    <img src="${campData.image}" alt="${campData.image}">
                     <h3>${campData.campname}</h3>
                     <p><span>Country:</span> ${campData.location}</p>
                `

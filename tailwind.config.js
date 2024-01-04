@@ -2,11 +2,6 @@
 export default {
   content: ['*.{html,js}'],
   theme: {
-    container: {
-      padding: {
-        default: '15px',
-      }
-    },
     extend: {
       fontFamily: {
         bigshoulder: ['Big Shoulders Display'],
