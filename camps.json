@@ -13,7 +13,7 @@
       "campname": "Children of Hope",
       "image": "https://images.adsttc.com/media/images/5ecd/2394/b357/65c1/7900/0380/newsletter/shutterstock_233311912.jpg?1590502274",
       "description":"Children of Hope (Tumaini Kwa Watoto- swahili translation) is a charity that operates a family based outreach empowerment and foster care program aimed at orphans and vulnerable children, especially those living on the streets ",
-      "location":"India",
+      "location":"Nigeria",
       "people": 800,
       "money": 5000    
     },
@@ -28,29 +28,11 @@
     },
     {
       "id": 4,
-      "campname": "Safe House - RefuSHE",
-      "image": "https://i.guim.co.uk/img/media/ad7104fd15547c7720fe9b24a7de52d81fe7a881/0_52_1500_900/master/1500.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=d2593ab2b1fcdcd7234c11ce4462822b",
-      "description":" We believe there is a feasible solution for homeless and vulnerable children and that it may be the only justifiable solution, as the problem of homelessness is so great that building children homes cannot solve it.",
-      "location":"Nigeria",
-      "people": 500,
-      "money": 2890 
-    },
-    {
-      "id": 5,
       "campname": "CARE International",
       "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2022-10/221006-al-hol-syria-2019-ew-1034a-7a895e.jpg",
       "description":"We seek a world of hope, tolerance and social justice, where poverty has been overcome and all people live in dignity and security.",
       "location":"Somalia",
       "people": 250,
       "money": 50 
-    },
-    {
-      "id": 6,
-      "campname": "Made in the Streets",
-      "image": "https://nbcpalmsprings.com/wp-content/uploads/sites/8/2017/09/14989134_g.jpg",
-      "description":"We put women and girls in the centre because we know that we cannot overcome poverty until all people have equal rights and opportunities.",
-      "location":"UK",
-      "people": 250,
-      "money": 5400 
-    } 
+    }
   ]
