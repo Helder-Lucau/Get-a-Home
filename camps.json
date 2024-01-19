@@ -1,12 +1,14 @@
   [
     {
       "id": 1,
-      "campname": "Prophet Reward Foundation",
+      "campname": "Reward Foundation",
       "image": "https://i.pinimg.com/564x/46/ad/3f/46ad3f37e3793f8b6fd9527b97875f6d.jpg",
       "description":"To keep on investing to fight against the extreme poverty and hunger, to promote human rights and promote peace and emergency response in the world. The charity is supporting and training the talented youths in the poor communities, empowering Orphans, Widows and Single mothers, supporting the care of Orphans, persons suffering from HIV/AIDS and disaster victims",
       "location":"Kenya",
-      "people": 50,
-      "money": 500
+      "capacity": 50,
+      "funds": "0",
+      "goal": "100,000",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg"
     },
     {
       "id": 2,
@@ -14,8 +16,9 @@
       "image": "https://images.adsttc.com/media/images/5ecd/2394/b357/65c1/7900/0380/newsletter/shutterstock_233311912.jpg?1590502274",
       "description":"Children of Hope (Tumaini Kwa Watoto- swahili translation) is a charity that operates a family based outreach empowerment and foster care program aimed at orphans and vulnerable children, especially those living on the streets ",
       "location":"Nigeria",
-      "people": 800,
-      "money": 5000    
+      "capacity": 800,
+      "funds": "27,950",
+      "goal": "20,000"    
     },
     {
       "id": 3,
@@ -23,16 +26,18 @@
       "image": "https://images.unsplash.com/photo-1625641819830-bf7ec1d5a816?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1130&q=80",
       "description":"We have the call and responsibility to reach out to the children and youths who are orphans and destitute by providing spiritual confidence to enable them be part of the achievement in the society. Through the course of our work, we have initiated programs to cater for women through empowerment strategies and support to the elderly widows.",
       "location":"Indonesia",
-      "people": 18,
-      "money": 1500
+      "capacity": 18,
+      "funds": "124,140",
+      "goal": "150,000"
     },
     {
       "id": 4,
       "campname": "CARE International",
-      "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2022-10/221006-al-hol-syria-2019-ew-1034a-7a895e.jpg",
+      "image": "https://images.unsplash.com/photo-1602181047856-c07f6c5d6353?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description":"We seek a world of hope, tolerance and social justice, where poverty has been overcome and all people live in dignity and security.",
       "location":"Somalia",
-      "people": 250,
-      "money": 50 
+      "capacity": "250",
+      "funds": "70,585",
+      "goal": "15,000" 
     }
   ]

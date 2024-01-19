@@ -19,24 +19,16 @@ function fetchCampsData() {
         .then((data) => {
             data.forEach((campData) => {
 
-                const camp = document.createElement('div')
-                camp.className = 'camp-list'
-                camp.innerHTML = `
-                    <img src="${campData.image}" alt="${campData.image}">
+                const campCardDetails = document.createElement('div')
+                campCardDetails.className = 'camp-card'
+                campCardDetails.innerHTML = `
+                    <img src="${campData.image}" alt="${campData.image}"/>
+                    <h1>${campData.location}</h1>
                     <h3>${campData.campname}</h3>
-                    <p><span>Country:</span> ${campData.location}</p>
+                    <p>Raised<span>$${campData.funds}</span></p>
+                    <p>Goal<span>$${campData.goal}</span></p>
                `
-                const readMore = document.createElement('button')
-                readMore.className = 'read-more'
-                readMore.innerText = 'READ MORE'
-
-                camp.appendChild(readMore)
-                campList.appendChild(camp)
-
-                readMore.addEventListener('click', (e) => {
-                    e.preventDefault()
-                    campsDataDetails(campData)
-                })
+                campList.appendChild(campCardDetails)
             })
         })
         .catch(error => {
@@ -45,39 +37,39 @@ function fetchCampsData() {
 }
 
 //Function that fetch camp data from db.json
-function campsDataDetails(campData) {
+// function campsDataDetails(campData) {
 
-    campDetails.innerHTML = "";
+//     campDetails.innerHTML = "";
 
-    const campProfile = document.createElement("div");
-    campProfile.className = "camp-list";
-    campDetails.appendChild(campProfile);
+//     const campProfile = document.createElement("div");
+//     campProfile.className = "camp-list";
+//     campDetails.appendChild(campProfile);
 
-    const campImage = document.createElement("img");
-    campImage.className = "camp-image";
-    campImage.src = campData.image;
-    campProfile.append(campImage);
+//     const campImage = document.createElement("img");
+//     campImage.className = "camp-image";
+//     campImage.src = campData.image;
+//     campProfile.append(campImage);
 
-    const campName = document.createElement("h3");
-    campName.className = "camp-name";
-    campName.innerText = campData.campname;
-    campProfile.append(campName);
+//     const campName = document.createElement("h3");
+//     campName.className = "camp-name";
+//     campName.innerText = campData.campname;
+//     campProfile.append(campName);
 
-    const campDesc = document.createElement("p");
-    campDesc.className = "camp-desc";
-    campDesc.innerText = campData.description;
-    campProfile.appendChild(campDesc);
+//     const campDesc = document.createElement("p");
+//     campDesc.className = "camp-desc";
+//     campDesc.innerText = campData.description;
+//     campProfile.appendChild(campDesc);
 
-    const country = document.createElement("p");
-    country.className = "camp-location";
-    country.innerText = `Country: ${campData.location}`;
-    campProfile.appendChild(country);
+//     const country = document.createElement("p");
+//     country.className = "camp-location";
+//     country.innerText = `Country: ${campData.location}`;
+//     campProfile.appendChild(country);
 
-    const cap = document.createElement("p");
-    cap.className = "camp-cap";
-    cap.innerText = `Capacity: ${campData.people} People`;
-    campProfile.appendChild(cap);
-}
+//     const cap = document.createElement("p");
+//     cap.className = "camp-cap";
+//     cap.innerText = `Capacity: ${campData.people} People`;
+//     campProfile.appendChild(cap);
+// }
 
 //Open & Close sidebar Menu
 function Menu(event) {
