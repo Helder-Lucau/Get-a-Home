@@ -297,7 +297,7 @@
 
       <!--CAMPS CARD SECTION-->
       <section class="bg-[#ebeeee]">
-        <div class="main-content max-w-[1240px] mx-auto py-[2rem]">
+        <div class="main-content max-w-[1240px] m-auto px-2 py-[2rem]">
           <h1
             class="font-medium text-4xl text-center font-poppins uppercase pt-6"
           >
@@ -309,42 +309,71 @@
           >
             <!--shelter homes/refugee camps list content-->
           </div>
-          <button>View All</button>
+          <button>Show more</button>
         </div>
       </section>
       <!--END CAMPS CARD SECTION-->
 
       <!--NEWS AND STORIES SECTION-->
-      <section class="bg-slate-700 font-poppins">
-        <div class="max-w-[1240px] m-auto w-full h-full py-[2rem]">
-          <div>
-            <h1 class="md:text-4xl text-2xl font-medium">Events</h1>
+      <section
+        class="bg-[url('https://images.unsplash.com/photo-1544056113-76ec529669b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] mx-auto"
+      >
+        <div class="max-w-[1240px] mx-auto px-2 py-[2rem]">
+          <div class="">
+            <h1
+              class="md:text-4xl sm:text-3xl text-2xl font-bold uppercase py-4"
+            >
+              Events
+            </h1>
             <p class="py-4">
               RefugeOasis events are organized by chapters around the Worldwide
             </p>
           </div>
           <!--EVENT CARDS-->
-          <div class="py-4">
+          <div class="py-4 grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div
-              class="flex flex-col lg:flex-row md:flex-row mx-auto items-center"
+              class="flex flex-col lg:flex-row md:flex-row sm:flex-row mx-auto items-center"
             >
               <img
                 src="https://images.pexels.com/photos/6113599/pexels-photo-6113599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="woman packing christmas present"
-                class="w-80 sm:w-96 h-72 md:h-80 sm:h-80 object-cover"
+                class="w-80 sm:w-64 h-72 md:h-80 sm:h-80 object-cover"
               />
               <div class="w-80 md:w-96 sm:w-96 h-80 p-8 bg-white">
-                <p
-                  class="flex flex-col bg-orange-500 px-2 py-4 text-white w-20 text-center"
-                >
-                  02<span class="py-2">FEB 2024</span>
+                <p class="px-2 py-4 w-14 bg-orange-500 text-white text-center">
+                  02 NOV 2024
                 </p>
-                <h2 class="font-bold text-xl md:text-2xl mt-4">
-                  Amazing Christmas Gift
+                <h2 class="font-bold text-xl mt-4 font-inter">
+                  Happy Christmas
                 </h2>
                 <p class="">Fri | 09:00 am</p>
-                <p class="mt-4 px-2 py-2 text-xs w-24 bg-gray-400 uppercase">
+                <p
+                  class="mt-4 px-2 py-2 text-xs w-1/2 text-center bg-gray-400 uppercase font-semibold"
+                >
                   <span>fundraising</span>
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col lg:flex-row md:flex-row sm:flex-row mx-auto items-center"
+            >
+              <img
+                src="https://images.pexels.com/photos/6113599/pexels-photo-6113599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="woman packing christmas present"
+                class="w-80 sm:w-64 h-72 md:h-80 sm:h-80 object-cover"
+              />
+              <div class="w-80 md:w-96 sm:w-96 h-80 p-8 bg-white">
+                <p class="px-2 py-4 w-14 bg-orange-500 text-white text-center">
+                  10 FEB 2024
+                </p>
+                <h2 class="font-bold text-xl mt-4 font-inter">
+                  Empowerment through Sports
+                </h2>
+                <p class="">Mon | 10:00 am</p>
+                <p
+                  class="mt-4 px-2 py-2 text-xs w-1/2 text-center bg-gray-400 uppercase font-semibold"
+                >
+                  <span>virtual workshop</span>
                 </p>
               </div>
             </div>
@@ -354,17 +383,21 @@
       <!--END NEWS AND STORIES SECTION-->
 
       <!--NEWSLETTER-->
-      <section>
-        <div>
-          <h1>
-            Subscribe to receive our monthly newsletter and updates about
-            RefugeOasis
-          </h1>
-          <div>
-            <input type="text" placeholder="you@example.com" />
-            <button>subscribe</button>
-          </div>
-        </div>
+      <section class="max-w-[1240px] mx-auto py-[6rem] font-inter">
+        <h1 class="font-semibold text-xl text-center">
+          Subscribe to receive our monthly newsletter and updates about
+          RefugeOasis
+        </h1>
+        <form class="mt-6 flex justify-center items-center w-full">
+          <input
+            type="text"
+            placeholder="you@example.com"
+            class="border px-2 py-2 w-2/6"
+          />
+          <button class="uppercase font-semibold bg-blue-300 px-2 py-2">
+            subscribe
+          </button>
+        </form>
       </section>
       <!--END SECTION-->
     </main>

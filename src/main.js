@@ -25,8 +25,8 @@ function fetchCampsData() {
                     <img src="${campData.image}" alt="${campData.image}"/>
                     <h1>${campData.location}</h1>
                     <h3>${campData.campname}</h3>
-                    <p>Raised<span>$${campData.funds}</span></p>
-                    <p>Goal<span>$${campData.goal}</span></p>
+                    <p>Capacity<span>${campData.capacity}</span></p>
+                    <p>Available Space<span>${campData.available}</span></p>
                `
                 campList.appendChild(campCardDetails)
             })

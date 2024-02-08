@@ -6,9 +6,9 @@
       "description":"To keep on investing to fight against the extreme poverty and hunger, to promote human rights and promote peace and emergency response in the world. The charity is supporting and training the talented youths in the poor communities, empowering Orphans, Widows and Single mothers, supporting the care of Orphans, persons suffering from HIV/AIDS and disaster victims",
       "location":"Kenya",
       "capacity": 50,
+      "available": "Full",
       "funds": "0",
-      "goal": "100,000",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg"
+      "goal": "100,000"
     },
     {
       "id": 2,
@@ -17,6 +17,7 @@
       "description":"Children of Hope (Tumaini Kwa Watoto- swahili translation) is a charity that operates a family based outreach empowerment and foster care program aimed at orphans and vulnerable children, especially those living on the streets ",
       "location":"Nigeria",
       "capacity": 800,
+      "available": 100,
       "funds": "27,950",
       "goal": "20,000"    
     },
@@ -26,7 +27,8 @@
       "image": "https://images.unsplash.com/photo-1625641819830-bf7ec1d5a816?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1130&q=80",
       "description":"We have the call and responsibility to reach out to the children and youths who are orphans and destitute by providing spiritual confidence to enable them be part of the achievement in the society. Through the course of our work, we have initiated programs to cater for women through empowerment strategies and support to the elderly widows.",
       "location":"Indonesia",
-      "capacity": 18,
+      "capacity": 180,
+      "available": 90,
       "funds": "124,140",
       "goal": "150,000"
     },
@@ -36,7 +38,8 @@
       "image": "https://images.unsplash.com/photo-1602181047856-c07f6c5d6353?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description":"We seek a world of hope, tolerance and social justice, where poverty has been overcome and all people live in dignity and security.",
       "location":"Somalia",
-      "capacity": "250",
+      "capacity": 250,
+      "available": 15,
       "funds": "70,585",
       "goal": "15,000" 
     }
