@@ -296,7 +296,7 @@
       <!--End Section-->
 
       <!--CAMPS CARD SECTION-->
-      <section class="bg-[#ebeeee]">
+      <section>
         <div class="main-content max-w-[1240px] m-auto px-2 py-[2rem]">
           <h1
             class="font-medium text-4xl text-center font-poppins uppercase pt-6"
@@ -305,7 +305,7 @@
           </h1>
           <!--Camps Cards and Details-->
           <div
-            class="camp-content grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 items-center gap-8 pt-6"
+            class="camp-content grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 items-center gap-8 pt-6"
           >
             <!--shelter homes/refugee camps list content-->
           </div>
@@ -316,10 +316,10 @@
 
       <!--NEWS AND STORIES SECTION-->
       <section
-        class="bg-[url('https://images.unsplash.com/photo-1544056113-76ec529669b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] mx-auto"
+        class="w-full h-full object-cover bg-[url('https://images.unsplash.com/photo-1651372381086-9861c9c81db5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
       >
         <div class="max-w-[1240px] mx-auto px-2 py-[2rem]">
-          <div class="">
+          <div>
             <h1
               class="md:text-4xl sm:text-3xl text-2xl font-bold uppercase py-4"
             >
@@ -339,7 +339,7 @@
                 alt="woman packing christmas present"
                 class="w-80 sm:w-64 h-72 md:h-80 sm:h-80 object-cover"
               />
-              <div class="w-80 md:w-96 sm:w-96 h-80 p-8 bg-white">
+              <div class="w-80 md:w-96 sm:w-96 h-80 p-8 bg-[#ebeeee]">
                 <p class="px-2 py-4 w-14 bg-orange-500 text-white text-center">
                   02 NOV 2024
                 </p>
@@ -348,7 +348,7 @@
                 </h2>
                 <p class="">Fri | 09:00 am</p>
                 <p
-                  class="mt-4 px-2 py-2 text-xs w-1/2 text-center bg-gray-400 uppercase font-semibold"
+                  class="mt-4 px-4 py-2 text-xs w-fit text-center bg-gray-400 uppercase font-semibold"
                 >
                   <span>fundraising</span>
                 </p>
@@ -362,7 +362,7 @@
                 alt="woman packing christmas present"
                 class="w-80 sm:w-64 h-72 md:h-80 sm:h-80 object-cover"
               />
-              <div class="w-80 md:w-96 sm:w-96 h-80 p-8 bg-white">
+              <div class="w-80 md:w-96 sm:w-96 h-80 p-8 bg-[#ebeeee]">
                 <p class="px-2 py-4 w-14 bg-orange-500 text-white text-center">
                   10 FEB 2024
                 </p>
@@ -371,7 +371,7 @@
                 </h2>
                 <p class="">Mon | 10:00 am</p>
                 <p
-                  class="mt-4 px-2 py-2 text-xs w-1/2 text-center bg-gray-400 uppercase font-semibold"
+                  class="mt-4 px-4 py-2 text-xs w-fit text-center bg-gray-400 uppercase font-semibold"
                 >
                   <span>virtual workshop</span>
                 </p>
@@ -383,30 +383,88 @@
       <!--END NEWS AND STORIES SECTION-->
 
       <!--NEWSLETTER-->
-      <section class="max-w-[1240px] mx-auto py-[6rem] font-inter">
-        <h1 class="font-semibold text-xl text-center">
-          Subscribe to receive our monthly newsletter and updates about
-          RefugeOasis
-        </h1>
-        <form class="mt-6 flex justify-center items-center w-full">
-          <input
-            type="text"
-            placeholder="you@example.com"
-            class="border px-2 py-2 w-2/6"
-          />
-          <button class="uppercase font-semibold bg-blue-300 px-2 py-2">
-            subscribe
-          </button>
-        </form>
+      <section class="py-[6rem] font-inter px-4 bg-[#ebeeee]">
+        <div class="">
+          <h1 class="font-medium text-lg lg:text-xl text-center tracking-wide">
+            Subscribe to receive our monthly newsletter, events and updates
+            about RefugeOasis
+          </h1>
+          <form
+            class="mt-6 flex flex-col lg:flex-row md:flex-row justify-center items-center"
+          >
+            <input
+              type="text"
+              placeholder="yourEmail@example.com"
+              class="px-4 py-2 w-80 lg:w-96 placeholder:text-gray-400 placeholder:italic"
+            />
+            <input
+              type="submit"
+              class="cursor-pointer uppercase font-semibold bg-blue-300 px-6 py-2 mt-4 lg:mt-0 md:mt-0"
+              value="subscribe"
+            />
+          </form>
+        </div>
       </section>
-      <!--END SECTION-->
+      <!--END NEWSLETTER SECTION-->
     </main>
 
+    <!--FOOTER-->
     <footer>
-      <div class="bg-gray-500">
-        <h1>Footer</h1>
+      <div class="max-w-[1240px] mx-auto mt-6">
+        <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-2 px-4">
+          <div class="mb-5">Logo</div>
+          <div class="mb-5">
+            <h4 class="capitalize text-xl text-gray-600 pb-4 font-medium">
+              about us
+            </h4>
+            <ul class="text-gray-500">
+              <li class="pb-4">How RefugeOasis Works</li>
+              <li class="pb-4">Why RefugeOasis</li>
+              <li class="pb-4">Our Team</li>
+              <li class="pb-4">Common questions</li>
+              <li class="pb-4">Contact Us</li>
+            </ul>
+          </div>
+          <div class="mb-5">
+            <h4 class="capitalize text-xl pb-4">get involved</h4>
+            <ul class="text-gray-500">
+              <li class="pb-4">Volunteer</li>
+              <li class="pb-4">Events</li>
+              <li class="pb-4">Advocate</li>
+              <li class="pb-4">Donate Goods</li>
+              <li class="pb-4">Careers</li>
+            </ul>
+          </div>
+          <div class="mb-5">
+            <h4 class="capitalize text-xl pb-4">resources</h4>
+            <ul class="text-gray-500">
+              <li class="pb-4">Help center</li>
+              <li class="pb-4">Blog</li>
+              <li class="pb-4">Stories</li>
+              <li class="pb-4">Newsroom</li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-b-2"></div>
+        <div
+          class="flex flex-col-reverse lg:flex-row md:flex-row justify-between mt-6 px-4"
+        >
+          <div class="flex flex-col lg:flex-row md:flex-row">
+            <p>© 2024 RefugeOasis</p>
+            <a href="#">Terms</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Legal</a>
+          </div>
+          <div class="flex flex-row">
+            <a>facebook</a>
+            <a>twitter</a>
+            <a>instagram</a>
+            <a>linkedin</a>
+          </div>
+        </div>
       </div>
     </footer>
+    <!--END OF FOOTER
 
     <!-- <script>
       //Navbar submenu dropdown
