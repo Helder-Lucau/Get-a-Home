@@ -20,6 +20,21 @@
   } */
 }
 
+@layer utilities {
+  .footer-effect::after {
+    @apply content-[''] bg-gray-300 h-0.5 w-0 left-0 -bottom-2 absolute duration-300;
+  }
+  .footer-effect:hover::after {
+    @apply w-[100%];
+  }
+  .footer-effect-bottom::after {
+    @apply content-[''] bg-gray-300 h-0.5 w-0 left-0 -bottom-0 absolute duration-300;
+  }
+  .footer-effect-bottom:hover::after {
+    @apply w-[100%];
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
